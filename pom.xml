@@ -9,9 +9,7 @@
   <artifactId>dblib</artifactId>
   <packaging>pom</packaging>
   <version>0.1</version>
-  <modules>
-    <module>../gold</module>
-  </modules>
+
 
   <name>dblib</name>
   <!-- FIXME change it to the project's website -->
