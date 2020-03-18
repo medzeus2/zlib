@@ -2,9 +2,7 @@ package top.zeus2.data;
 
 import lombok.Data;
 
-/**
- * 自动生成分页请求，支持start end模式及 页面大小页码模式。
- */
+/** 自动生成分页请求，支持start end模式及 页面大小页码模式。 */
 @Data
 public class PageRequest {
 

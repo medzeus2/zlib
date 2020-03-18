@@ -2,9 +2,11 @@ package top.zeus2.data;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
 import java.sql.SQLException;
 import java.util.List;
 import javax.sql.DataSource;
+
 import oracle.jdbc.pool.OracleDataSource;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +32,6 @@ public class PagingOperatorTest {
 
     List<Emp> re =
         pageJdbcTemplate.queryForBeanList("select * from EMP t order by empno", null, Emp.class);
-    //    pageJdbcTemplate.queryForPageResult("")
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
     String s = gson.toJson(re);

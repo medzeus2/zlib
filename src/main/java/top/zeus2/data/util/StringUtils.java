@@ -92,8 +92,8 @@ public class StringUtils {
   /**
    * 将符合正则的字符替换为 replacement
    *
-   * @param pattern     正则表达式
-   * @param src         待替换的字符
+   * @param pattern 正则表达式
+   * @param src 待替换的字符
    * @param replacement 替换的字符
    * @return
    */
@@ -136,7 +136,7 @@ public class StringUtils {
    * 判断字符串是否匹配正则
    *
    * @param pattern 正则表达式
-   * @param src     字符串
+   * @param src 字符串
    * @return 返回匹配的字符
    */
   private static String isMatch(Pattern pattern, String src) {
