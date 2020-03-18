@@ -1,7 +1,8 @@
 package top.zeus2.data;
 
-import java.util.List;
 import lombok.Data;
+
+import java.util.List;
 
 /**
  * 分页结果.

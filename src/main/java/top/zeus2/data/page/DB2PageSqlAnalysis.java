@@ -1,9 +1,10 @@
 package top.zeus2.data.page;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import top.zeus2.data.PageRequest;
 import top.zeus2.data.util.StringUtils;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class DB2PageSqlAnalysis extends PagedSqlManager implements IPageSqlAnalysis {
   private final Pattern sqlregex =

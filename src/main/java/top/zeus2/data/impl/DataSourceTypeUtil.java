@@ -1,9 +1,10 @@
 package top.zeus2.data.impl;
 
-import java.lang.reflect.InvocationTargetException;
-import javax.sql.DataSource;
 import top.zeus2.data.DbType;
 import top.zeus2.data.util.StringUtils;
+
+import javax.sql.DataSource;
+import java.lang.reflect.InvocationTargetException;
 
 public class DataSourceTypeUtil {
 

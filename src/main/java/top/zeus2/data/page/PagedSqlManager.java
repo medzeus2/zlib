@@ -1,13 +1,14 @@
 package top.zeus2.data.page;
 
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.regex.Pattern;
 import lombok.Getter;
 import lombok.Setter;
 import top.zeus2.data.DbType;
 import top.zeus2.data.PageRequest;
 import top.zeus2.data.sql.SqlBuilder;
 import top.zeus2.data.util.StringUtils;
+
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.regex.Pattern;
 
 public abstract class PagedSqlManager implements IPageSqlAnalysis {
 

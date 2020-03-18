@@ -1,7 +1,5 @@
 package top.zeus2.data;
 
-import java.util.List;
-import javax.sql.DataSource;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -11,6 +9,9 @@ import top.zeus2.data.impl.DataSourceTypeUtil;
 import top.zeus2.data.page.IPageSqlAnalysis;
 import top.zeus2.data.page.PagedSqlManager;
 import top.zeus2.data.sql.SqlBuilder;
+
+import javax.sql.DataSource;
+import java.util.List;
 
 public class PageJdbcTemplate extends JdbcTemplate implements PageOperator {
 
@@ -59,7 +60,7 @@ public class PageJdbcTemplate extends JdbcTemplate implements PageOperator {
     String sql_data = psa.getPageSql(pageRequest);
     Long count = -1L;
     if (pageRequest.isFetchcount()) {
-      count = (Long) this.queryForObject(sql_count, args, Long.class);
+      count = this.queryForObject(sql_count, args, Long.class);
     }
     pageResult.setCount(count);
 

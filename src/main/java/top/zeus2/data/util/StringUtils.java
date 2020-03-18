@@ -1,8 +1,9 @@
 package top.zeus2.data.util;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class StringUtils {
@@ -65,11 +66,7 @@ public class StringUtils {
    */
   public static boolean isEmpty(String value) {
     int strLen;
-    if (value == null || (strLen = value.length()) == 0) {
-      return true;
-    }
-
-    return false;
+    return value == null || (strLen = value.length()) == 0;
   }
 
   /**

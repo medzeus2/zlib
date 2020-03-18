@@ -1,10 +1,11 @@
 package top.zeus2.data;
 
-import java.util.List;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.lang.Nullable;
 import top.zeus2.data.sql.SqlBuilder;
+
+import java.util.List;
 
 /** 关于分页的接口 */
 public interface PageOperator {
