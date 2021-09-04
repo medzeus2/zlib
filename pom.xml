@@ -8,7 +8,7 @@
     <groupId>top.zeus2</groupId>
     <artifactId>dblib</artifactId>
     <packaging>pom</packaging>
-    <version>0.1</version>
+    <version>0.3</version>
 
 
     <name>dblib</name>
